@@ -1,6 +1,8 @@
 <?page title="Мониторинг реализации госпрограмм" contentType="text/html;charset=UTF-8"?>
 <zk>
-<window title="Мониторинг реализации госпрограмм" border="normal">
-	Новая страница для ZKOOS
+	<style  src="/css/index.css" />
+	<include src="/heads/head.zul" />
+	<window title="Мониторинг реализации госпрограмм" border="normal">
+	Новая страница для ZKOOS 1
 </window>
 </zk>

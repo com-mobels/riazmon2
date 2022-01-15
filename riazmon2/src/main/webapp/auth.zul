@@ -1,0 +1,87 @@
+<?page title="Мониторинг реализации госпрограмм" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="http://www.zkoss.org/2005/zk/native"
+	xmlns:w="http://www.zkoss.org/2005/zk/client" > 
+	<style  src="/css/index.css" />
+	<include src="/heads/headforauth.zul" />
+
+	<window id="auth" title="Авторизация пользователя" width="360px" position="center" border="none" mode="modal" draggable="false" droppable="true"
+	>
+
+		<caption label="" image="/images/login.png" />
+		
+		<textbox id="tmp" width="0px" height="0px" name="tmp" zclass="none" style="display:none"/>
+		
+		<label id="errorInfo" multiline="true" style="color:red;font:italic" />
+
+        <div id="form">
+		<h:form>
+			<grid zclass="none" id="grid1" visible="false">
+				<rows>				    
+					<row zclass="none">					    
+						Имя пользователя:										
+						<textbox id="login" hflex="1" type="text" maxlength="20" name="login"/>						
+					</row>					
+
+					<row zclass="none">
+						Пароль:
+						<textbox id="password"  hflex="1" type="password" maxlength="20" name="password" /> 
+					</row>
+
+					<row spans="2," align="center" zclass="none" visible="false">
+						<checkbox id="auto" visible="false" disabled="true" label="Автоматически входить в систему под этим пользователем"/>
+					</row>
+
+					<row spans="2," align="right" zclass="none">
+						<div>
+							<button id="btnLogin" label="Вход" width="70px" w:onClick="zk.Widget.$('$login').updateChange_();zk.Widget.$('$password').updateChange_();"/>
+						</div>
+					</row>
+
+					<row spans="2," align="right" zclass="none">
+						<div>
+							<label id="errorLine" style="color:red;font:italic" width="100%" multiline="true" />
+						</div>
+					</row>
+				</rows>
+			</grid>
+			
+			<grid zclass="none" id="grid2" visible="true">
+				<rows>
+					<row zclass="none" height="20px">
+						<cell colspan="3"></cell>
+					</row>
+					<row zclass="none" align="center">
+
+						<cell colspan="3">
+							Пользователь
+							<label id="entereduser" style="font-weight:bold" />
+							уже работает в системе.
+						</cell>
+
+					</row>
+					<row zclass="none">
+						<cell colspan="3" align="center">
+							Закрыть предыдущую сессию этого
+							пользователя?
+						</cell>
+					</row>
+
+					<row zclass="none" height="30px">
+						<cell colspan="3"></cell>
+					</row>
+					
+					<row zclass="none" >
+						<cell colspan="3" align="center" >
+							<button id="btnYes" label="Да" width="70px" />
+							<label value="  " />
+							<button id="btnNo" label="Нет"	width="70px" />
+						</cell>
+					</row>					
+				</rows>				
+			</grid>
+			
+		</h:form>
+		</div>		
+		
+	</window>	 
+</zk>

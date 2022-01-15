@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<zk xmlns:h="http://www.zkoss.org/2005/zk/native"
+	xmlns:w="http://www.zkoss.org/2005/zk/client">
+	<style src="/css/head.css" />
+
+	<div >
+		<h:table border="0px" cellSpacing="0px" cellPadding="0px"
+			width="100%">
+			<h:tr height="50px">
+				<h:td width="5px" />
+				<h:td width="40px">
+					<image src="/images/GERB.gif" width="40px"
+						align="left"  />
+				</h:td>
+				<h:td style="text-align:center">
+					<vbox width="100%" align="center">
+						<label
+							value="Формирование и мониторинг реализации государственных программ Ростовской области"
+							class="shadowtext" />
+					</vbox>
+				</h:td>
+				<h:td width="48px"
+					style="text-align:left;width:550px">
+				</h:td>
+			</h:tr>
+		</h:table>
+	</div>
+
+</zk>
