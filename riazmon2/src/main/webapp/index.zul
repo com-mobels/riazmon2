@@ -2,7 +2,8 @@
 <zk>
 	<style  src="/css/index.css" />
 	<include src="/heads/head.zul" />
-	<window title="Мониторинг реализации госпрограмм" border="normal">
-	Новая страница для ZKOOS 1
-</window>
+	<div >
+		<label value="Защишенная страница" />
+	</div>
+
 </zk>

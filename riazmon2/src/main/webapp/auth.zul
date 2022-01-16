@@ -1,6 +1,5 @@
 <?page title="Мониторинг реализации госпрограмм" contentType="text/html;charset=UTF-8"?>
-<zk xmlns:h="http://www.zkoss.org/2005/zk/native"
-	xmlns:w="http://www.zkoss.org/2005/zk/client" > 
+<zk xmlns:n="native" xmlns:w="client" > 
 	<style  src="/css/index.css" />
 	<include src="/heads/headforauth.zul" />
 
@@ -14,7 +13,7 @@
 		<label id="errorInfo" multiline="true" style="color:red;font:italic" />
 
         <div id="form">
-		<h:form>
+		<n:form>
 			<grid zclass="none" id="grid1" visible="false">
 				<rows>				    
 					<row zclass="none">					    
@@ -80,7 +79,7 @@
 				</rows>				
 			</grid>
 			
-		</h:form>
+		</n:form>
 		</div>		
 		
 	</window>	 
